@@ -156,43 +156,43 @@ take 1.1 as an example:
     # then copy the content of others/blankline.lua to /home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations
     cp blankline.lua ~/.local/share/nvim/lazy/base46/lua/base46/integrations
     ```
-1.1. ***others/blankline.lua***    
+1.1. ***others/b64_blankline.lua***    
 change the color of indentline's hightlighted char to make it transparent.    
 ```bash
 # path:
 ~/.local/share/nvim/lazy/base46/lua/base46/integrations
 ```
-1.2. ***others/nvdash.lua***      
+1.2. ***others/b64_nvdash.lua***      
 change the color of the options and header graph of dashboard when neovim starts .    
 ```bash
 # path:
 ~/.local/share/nvim/lazy/base46/lua/base46/integrations/nvdash.lua
 ```
-1.3. ***others/colors.lua***   
+1.3. ***others/mason_colors.lua***   
 change the color of mason ui.    
 ```bash
 # path:
 ~/.local/share/nvim/lazy/mason.nvim/lua/mason/ui/colors.lua
 ```
-1.4. ***others/settings.lua***   
+1.4. ***others/mason_settings.lua***   
 change the url of mason install ot speed up.   
 ```bash
 # path:
 ~/.local/share/nvim/lazy/mason.nvim/lua/mason/settings.lua
 ```
-1.5. ***others/defalut.lua***    
+1.5. ***others/statusline_defalut.lua***    
 change the color and style\[such as icon color or compsition\] of lsp statusline.
 ```bash
 # path:
 ~/.local/share/nvim/lazy/ui/lua/nvchad/statusline/default.lua
 ```
-1.6. ***others/lsp.lua***   
+1.6. ***others/ui_lsp.lua***   
 change the icon of side lsp hint.    
 ```bash
 # path:
 ~/.local/share/nvim/lazy/ui/lua/nvchad/lsp.lua
 ```
-1.7. ***others/tree_sitter_configs.lua***   
+1.7. ***others/treesitter_parsers.lua***   
 change the url of nvim-tree-sitter to speed up.
 ```bash
 # path:
