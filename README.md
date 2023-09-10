@@ -5,7 +5,16 @@
 ***this is a project to make help you to custom your neovim based on chardrc.***
 
 
-[TOC]
+* [Chardrc Custom😀🚀](#chardrc-custom)
+   * [Install](#install)
+      * [install requires](#install-requires)
+      * [clone this project](#clone-this-project)
+   * [Usage](#usage)
+      * [1. The structure of this custom files [free to edit😀]](#1-the-structure-of-this-custom-files-free-to-edit)
+      * [2. other configs you should edit but be careful](#2-other-configs-you-should-edit-but-be-careful)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+
 
 
 ##  Install
