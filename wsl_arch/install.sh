@@ -1,1 +1,1 @@
-echo "hello, wsl arch linux!!!"
+echo "project is under developing, plase wait for us(*^_^*)..."

@@ -16,12 +16,14 @@
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 
 
-
 ##  Install
 
 * requires:
-    * neovim(version >= 9.0)
-    * git
+    * Neovim(version >= 9.0)
+    * Nerdfont(not ended with 'Mono')
+    * Ripgrep
+    * Git
+    * GCC
 
 ### install requires
 
@@ -65,8 +67,10 @@ After you installed neovim and chardrc, clone the correlated version of this pro
 cp -r ~/.config/nvim/lua/custom ~/.config/nvim/lua/custom_backup 
 rm -r ~/.config/nvim/lua/custom
 
-# clone custom files to ~/.config/nvim/lua/
-git clone https://github.com/HugoPhi/NvCostum/tree/master/wsl_arch_0.0.1/v0.0.1/lua/custom ~/.config/nvim/lua/
+# run corresponding install.sh script to install. 
+curl -L https://raw.githubusercontent.com/HugoPhi/NvCustom/master/wsl_arch/install.sh | bash
+
+# We take wsl_arch as an example here, if you want to install it on other system, just replace the 'wsl_arch' with 'your_selected_folder_name'. For convenience, I will take wsl_arch as example in below, you can do the same as me on your own system.   
 ```
 
 ## Usage 
@@ -118,7 +122,7 @@ n = {
     ['JK'] = [':q<CR>', 'quit'],
 },
 i = {
-    ['<C-j>'] = [':m .+1<CR>==', 'move down'],
+    ['jk'] = ['<Esc>', 'quit insert mode'],
 },
 ```
 * 5. ***plugins.lua***   
@@ -135,28 +139,28 @@ change the folder icon of nvimtree. or it won't work.
 1.3. ***plugins/configs/others.lua***   
 change the git side icons.   
 
-* 2. files in ~/.local/nvim/     
+* 2. files in others/   
 take 1.1 as an example:   
     ```bash
     # method 1: copy manually    
     # 1. enter origin file
-    vim /home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations/blankline.lua 
+    vim ~/.local/share/nvim/lazy/base46/lua/base46/integrations/blankline.lua 
     
-    # 2. then copy the content of others/blankline.lua to /home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations
+    # 2. then copy the contents of wsl_arch/others/blankline.lua to ~/.local/share/nvim/lazy/base46/lua/base46/integrations
     
     
     # method 2: copy this file to target path    
     # create backup file of origin file 
-    cp /home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations/blankline.lua /home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations/blankline.lua_backup
+    cp ~/.local/share/nvim/lazy/base46/lua/base46/integrations/blankline.lua ~/.local/share/nvim/lazy/base46/lua/base46/integrations/blankline.lua_backup
     
     # then copy the content of others/blankline.lua to /home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations
-    cp blankline.lua /home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations
+    cp blankline.lua ~/.local/share/nvim/lazy/base46/lua/base46/integrations
     ```
 1.1. ***others/blankline.lua***    
 change the color of indentline's hightlighted char to make it transparent.    
 ```bash
 # path:
-/home/archer/.local/share/nvim/lazy/base46/lua/base46/integrations
+~/.local/share/nvim/lazy/base46/lua/base46/integrations
 ```
 1.2. ***others/nvdash.lua***      
 change the color of the options and header graph of dashboard when neovim starts .    
@@ -188,9 +192,10 @@ change the icon of side lsp hint.
 # path:
 ~/.local/share/nvim/lazy/ui/lua/nvchad/lsp.lua
 ```
-
-
-
-
-
+1.7. ***others/tree_sitter_configs.lua***   
+change the url of nvim-tree-sitter to speed up.
+```bash
+# path:
+~/.local/share/nvim/lazy/nvim-treesitter/lua/nvim-treesitter/parsers.lua
+```
 
