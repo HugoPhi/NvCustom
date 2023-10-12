@@ -18,10 +18,11 @@ vim.g.indent_blankline_show_first_indent_level = true
 ----- Markdown Preview ------
 -- vim.g.mkdp_browser = '/mnt/c/Program\\ Files\\ \\(x86\\)/Microsoft/Edge/Application/msedge.exe'
 
-vim.g.mkdp_auto_close = false
-vim.g.mkdp_browser = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
+vim.g.mkdp_auto_close = true
+-- vim.g.mkdp_browser = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
+vim.g.mkdp_browser = 'E:\\Vieb-10.3.0-win\\Vieb.exe'
 vim.g.mkdp_filetypes = {'markdown', 'text'}
-vim.g.mkdp_theme = 'light'
+vim.g.mkdp_theme = 'dark'
 
 -----------------------------
 
